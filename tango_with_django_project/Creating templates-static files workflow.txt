@@ -1,0 +1,20 @@
+TEMPLATES WORKFLOW (4.4)
+
+1) Create templates dir in project folder
+2) Specify template in settings.py
+3) Create new view/find view in applications views.py
+4) Add specific view logic
+5) Construct dictionary object to pass through template engine as a part of template's context
+6) return render() - make sure to reference the request, template file, and context dictionary
+7) Map view to a URL by modifying project's urls.py and the app specific urls.py
+
+
+STATIC FILES WORKFLOW (4.4)
+
+1) Take static media file and place it in project's static dir. Specify the directory in the STATICFILES_DIRS list in settings.py
+2) Use appropriate tag in the html file
+3) Use {% load staticfiles %} and {% static "<filename>" %} commands in the template to access specific files
+
+MEDIA FILES WORKFLOW (4.4)
+1) Place files in media dir, specify dir in MEDIA_ROOT variable in settings.py
+2) Link to media file in template using {{ MEDIA_URL }} context variable (e.x. <img src="{{ MEDIA_URL }}cat.jpg"> )

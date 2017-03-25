@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html>
+<head>
+  <title>About</title>
+</head>
+<body>
+  <h1>The about page!</h1>
+  <div>
+    <img src="{% static "images/owl.png" %}"
+        alt="Picture of owl"/>
+  </div>
+  <div>
+    <br />
+    <br />
+    <img src="{{ MEDIA_URL }}martian.jpg"
+        alt="Matt Damon on some sand"/>
+  </div>
+</body>
+</html>
